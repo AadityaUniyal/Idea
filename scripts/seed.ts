@@ -1,4 +1,4 @@
-import { neon } from "@neondatabase/serverless";
+import { neon, neonConfig } from "@neondatabase/serverless";
 import * as dotenv from "dotenv";
 import { getEmbedding } from "../lib/ai/embeddings";
 import { chunkDocument } from "../lib/ingestion/chunker";
@@ -6,8 +6,13 @@ import { chunkDocument } from "../lib/ingestion/chunker";
 dotenv.config();
 
 const databaseUrl = process.env.DATABASE_URL;
-if (!databaseUrl) throw new Error("DATABASE_URL is not set");
+if (!databaseUrl) {
+  console.error("\n❌ DATABASE_URL is not set.");
+  console.error("Please ensure DATABASE_URL is set in your .env file locally, or in GitHub Secrets (Settings > Secrets and variables > Actions) if running in CI.\n");
+  process.exit(1);
+}
 
+neonConfig.fetchEndpoint = (host: string) => `https://${host}/sql`;
 const sql = neon(databaseUrl);
 
 async function seed() {
