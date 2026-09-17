@@ -1,0 +1,139 @@
+[
+  {
+    "id": "q1",
+    "question": "What is the standard return window for physical purchases?",
+    "expected_source_doc": "Company_Refund_and_Return_Policy_2026.md",
+    "expected_answer_facts": [
+      "30 days",
+      "starting from date of physical delivery",
+      "original packaging required"
+    ]
+  },
+  {
+    "id": "q2",
+    "question": "How much is the restocking fee on opened enterprise hardware?",
+    "expected_source_doc": "Company_Refund_and_Return_Policy_2026.md",
+    "expected_answer_facts": [
+      "15%",
+      "fifteen percent",
+      "deducted from final refunded amount"
+    ]
+  },
+  {
+    "id": "q3",
+    "question": "Can digital license keys and cloud credits be refunded after activation?",
+    "expected_source_doc": "Company_Refund_and_Return_Policy_2026.md",
+    "expected_answer_facts": [
+      "non-refundable once activated or redeemed"
+    ]
+  },
+  {
+    "id": "q4",
+    "question": "Under what condition is the restocking fee waived?",
+    "expected_source_doc": "Company_Refund_and_Return_Policy_2026.md",
+    "expected_answer_facts": [
+      "manufacturing defects",
+      "transit damage reported within 48 hours"
+    ]
+  },
+  {
+    "id": "q5",
+    "question": "What is the statutory withdrawal period under the EU Consumer Rights Directive?",
+    "expected_source_doc": "EU_Consumer_Rights_Directive_Compliance.md",
+    "expected_answer_facts": [
+      "14 calendar days",
+      "Directive 2011/83/EU"
+    ]
+  },
+  {
+    "id": "q6",
+    "question": "Are restocking fees permitted on returns from EU consumers?",
+    "expected_source_doc": "EU_Consumer_Rights_Directive_Compliance.md",
+    "expected_answer_facts": [
+      "strictly prohibited",
+      "Article 13",
+      "unenforceable against EU residents"
+    ]
+  },
+  {
+    "id": "q7",
+    "question": "How does EU law interact with Acme's standard corporate refund policy?",
+    "expected_source_doc": "EU_Consumer_Rights_Directive_Compliance.md",
+    "expected_answer_facts": [
+      "EU statutory law supersedes and overrides standard corporate terms",
+      "for EU member state transactions"
+    ]
+  },
+  {
+    "id": "q8",
+    "question": "What is the guaranteed monthly uptime in the Cloud Infrastructure SLA?",
+    "expected_source_doc": "Enterprise_Cloud_SLA_and_Incident_Response.md",
+    "expected_answer_facts": [
+      "99.95%"
+    ]
+  },
+  {
+    "id": "q9",
+    "question": "What is the response time SLA for a Severity 1 Critical Outage?",
+    "expected_source_doc": "Enterprise_Cloud_SLA_and_Incident_Response.md",
+    "expected_answer_facts": [
+      "under 15 minutes",
+      "fifteen minutes"
+    ]
+  },
+  {
+    "id": "q10",
+    "question": "What service credit is provided if monthly uptime falls between 95.0% and 98.99%?",
+    "expected_source_doc": "Enterprise_Cloud_SLA_and_Incident_Response.md",
+    "expected_answer_facts": [
+      "25%",
+      "twenty-five percent invoice credit"
+    ]
+  },
+  {
+    "id": "q11",
+    "question": "What compensation is provided if cloud uptime drops below 95.0%?",
+    "expected_source_doc": "Enterprise_Cloud_SLA_and_Incident_Response.md",
+    "expected_answer_facts": [
+      "50%",
+      "fifty percent invoice credit"
+    ]
+  },
+  {
+    "id": "q12",
+    "question": "How many days in advance must scheduled system maintenance be notified?",
+    "expected_source_doc": "Enterprise_Cloud_SLA_and_Incident_Response.md",
+    "expected_answer_facts": [
+      "minimum 7 business days",
+      "02:00 to 06:00 UTC"
+    ]
+  },
+  {
+    "id": "q13",
+    "question": "How does our 15% restocking fee apply to a German customer returning a device within 10 days?",
+    "expected_source_doc": "EU_Consumer_Rights_Directive_Compliance.md",
+    "expected_answer_facts": [
+      "restocking fee is prohibited",
+      "EU Consumer Rights Directive overrides company policy",
+      "entitled to full refund within 14 days"
+    ]
+  },
+  {
+    "id": "q14",
+    "question": "Within how many days must an enterprise client submit written claims for SLA service credits?",
+    "expected_source_doc": "Enterprise_Cloud_SLA_and_Incident_Response.md",
+    "expected_answer_facts": [
+      "within 30 days of the impacted calendar month"
+    ]
+  },
+  {
+    "id": "q15",
+    "question": "What defines a Severity 2 Major Degradation in cloud infrastructure?",
+    "expected_source_doc": "Enterprise_Cloud_SLA_and_Incident_Response.md",
+    "expected_answer_facts": [
+      "p99 > 2500ms",
+      "background ingestion pipeline failure",
+      "under 1 hour response SLA"
+    ]
+  }
+]

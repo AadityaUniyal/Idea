@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #1C1B19;
+  --paper: #FAF8F4;
+  --paper-dim: #F0ECE3;
+  --rule: #D8D2C4;
+  --index-red: #A8402F;
+  --folder-green: #4B5D45;
+}
+
+body {
+  color: var(--ink);
+  background-color: var(--paper);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Document margins and card-catalog lines */
+.archive-border {
+  border-color: var(--rule);
+}
+
+.archive-card {
+  background-color: var(--paper-dim);
+  border: 1px solid var(--rule);
+}
+
+.citation-tag {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.75rem;
+  color: var(--index-red);
+}
+
+/* Custom scrollbars matching archive feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--paper);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--rule);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b5ada0;
+}
